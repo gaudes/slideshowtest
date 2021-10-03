@@ -1,0 +1,88 @@
+{
+	"common": {
+		"name": "slideshowupdate",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Slideshow",
+		"titleLang": {
+			"en": "Slideshow",
+			"de": "Diashow",
+			"ru": "Слайдшоу",
+			"pt": "Slideshow",
+			"nl": "Diavoorstelling",
+			"fr": "Diaporama",
+			"it": "Presentazione",
+			"es": "Diapositivas",
+			"pl": "Pokaz slajdów",
+			"zh-cn": "幻灯片"
+		},
+		"desc": {
+			"en": "Slideshow for VIS from different sources",
+			"de": "Diashow für VIS aus verschiedenen Quellen",
+			"ru": "Слайд-шоу для ВИС из разных источников",
+			"pt": "Apresentação de slides para VIS de diferentes fontes",
+			"nl": "Diavoorstelling voor VIS uit verschillende bronnen",
+			"fr": "Diaporama pour VIS de différentes sources",
+			"it": "Slideshow per VIS da diverse fonti",
+			"es": "Presentación de diapositivas para VIS de diferentes fuentes",
+			"pl": "Pokaz slajdów dla VIS z różnych źródeł",
+			"zh-cn": "来自不同来源的 VIS 幻灯片"
+		},
+		"authors": [
+			"Gaudes <ralf@gaudes.net>"
+		],
+		"keywords": [
+			"ioBroker",
+			"Smart home",
+			"home automation",
+			"slideshow",
+			"VIS",
+			"pictures"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "slideshowupdate.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/gaudes/ioBroker.slideshowupdate/main/admin/slideshowupdate.png",
+		"readme": "https://github.com/gaudes/ioBroker.slideshowupdate/blob/main/README.md",
+		"loglevel": "info",
+		"restartAdapters": [
+			"vis"
+		],
+		"localLinks": {
+			"_default": "%web_protocol%://%ip%:%web_port%/vis/edit.html"
+		},
+		"mode": "daemon",
+		"type": "visualization",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
